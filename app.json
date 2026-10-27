@@ -16,10 +16,33 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.joe48324.ProductHunterPro"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "react-native-zip-archive",
+      "@react-native-google-signin/google-signin",
+      "expo-router",
+      "expo-status-bar",
+      "expo-build-properties",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "ndkVersion": "26.1.10909125"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fa1e7311-03d9-4449-bea6-5234648081a2"
+      }
     }
   }
 }
